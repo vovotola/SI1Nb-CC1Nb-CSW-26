@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Principais formatações</h1>
     <h2>Negrito/Destaque</h2>
@@ -14,10 +16,111 @@
     <p>Nesta frase vamos entrar com um palavra em <i>itálico</i> usando a tag i (não semântica)</p>
     <p>Nesta frase vamos entrar com um palavra em <EM>itálico</EM> usando a tag EM</p>
     <p>Texto Marcador</p>
-    <p>Aqui vamos usar um texto com destaque <mark style="background-color: green;">de marcador de texto</mark> usando mark</p>
-    <p> Aqui vamos usar um texto com destaque <mark style="background-color: yellow;">de marcador de texto</mark> usando mark</p>
+    <p>Aqui vamos usar um texto com destaque <mark style="background-color: green;">de marcador de texto</mark> usando
+        mark</p>
+    <p> Aqui vamos usar um texto com destaque <mark style="background-color: yellow;">de marcador de texto</mark> usando
+        mark</p>
     <h2>Texto grande e pequeno</h2>
-    <p>Estamos trabalhando aqui com um <b></b></p>
-    
+    <p>Estamos trabalhando aqui com um <big>texto grande</big> e um <small>texto pequeno</small></p>
+    <p>Neste paragrafo vamos trabalhar com um <del>texto que foi excluído</del> da frase (forma semântica)</p>
+    <p>Neste paragrafo vamos trabalhar com um <striker>texto que foi excluído</striker> da frase (forma não semântica)</p>
+    <h2>Texto inserido</h2>
+    <code>document.getElementyByid('edCodigo')</code>
+    <code><pre><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Fórmula de Bhaskara</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f4f4;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    input {
+      width: 80px;
+      padding: 8px;
+      margin: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    #resultado {
+      margin-top: 20px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>Fórmula de Bhaskara</h2>
+  <p>ax² + bx + c = 0</p>
+
+  <input type="number" id="a" placeholder="a">
+  <input type="number" id="b" placeholder="b">
+  <input type="number" id="c" placeholder="c">
+  <br>
+
+  <button onclick="calcular()">Calcular</button>
+
+  <div id="resultado"></div>
+</div>
+
+<script>
+function calcular() {
+  let a = parseFloat(document.getElementById('a').value);
+  let b = parseFloat(document.getElementById('b').value);
+  let c = parseFloat(document.getElementById('c').value);
+  let res = document.getElementById('resultado');
+
+  if (a === 0) {
+    res.innerHTML = "O valor de 'a' não pode ser 0.";
+    return;
+  }
+
+  let delta = b*b - 4*a*c;
+
+  let texto = `<strong>Passo 1:</strong> Δ = b² - 4ac<br>`;
+  texto += `Δ = (${b})² - 4·${a}·${c}<br>`;
+  texto += `Δ = ${delta}<br><br>`;
+
+  if (delta < 0) {
+    texto += "Δ < 0 → Não existem raízes reais.";
+  } else {
+    let x1 = (-b + Math.sqrt(delta)) / (2*a);
+    let x2 = (-b - Math.sqrt(delta)) / (2*a);
+
+    texto += `<strong>Passo 2:</strong> x = (-b ± √Δ) / (2a)<br>`;
+    texto += `x1 = ${x1}<br>`;
+    texto += `x2 = ${x2}`;
+  }
+
+  res.innerHTML = texto;
+}
+</script>
+
 </body>
+</html></pre></code>
+
+
+</body>
+
 </html>
