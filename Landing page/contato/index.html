@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>contato</title>
 </head>
-<body>
-    
+
+<body style="background-color: aqua;">
+    <h1>Entre em contato comigo</h1>
+    <br>
+    <h2>Telefone</h2>
+    <h3>032'9470129570913257</h3>
+    <br>
+    <h2>email</h2>
+    <h3>email@gmail.com</h3>
+    <br>
+   <h2>Formulário para Interessados</h2>
+
+<form action="/lugar-onde-vai-me-enviar" method="POST">
+    <table border="1" style="background-color: aliceblue;">
+        <thead style="background-color: rgb(143, 210, 255);">
+            <tr>
+                <th>Dados Pessoais</th>
+                <th>Tipo de Pessoa</th>
+                <th>Horário</th>
+            </tr>
+        </thead>
+        <tbody style="background-color: rgb(143, 210, 255);">
+            <tr>
+                
+                <td>
+                    <input type="text" name="nome" placeholder="Nome Completo" required><br>
+                    <input type="tel" name="telefone" placeholder="Telefone" required><br>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                </td>
+
+               
+                <td>
+                    <label><input type="radio" name="tipo_pessoa" value="fisica" checked> Física</label><br>
+                    <label><input type="radio" name="tipo_pessoa" value="juridica"> Jurídica</label>
+                </td>
+
+                
+                <td>
+                    <select name="horario">
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                
+                <td colspan="3">
+                     <input type="text" name="servico" placeholder="Serviço Desejado" style="width: 98%; margin-bottom: 5px;"><br>
+                    <textarea name="descricao" placeholder="Descrição" style="width: 98%;"></textarea><br>
+                    <button type="submit">Enviar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form><br>
+    <h1>Clique abaixo para voltar</h1>
+    <a href="../index.html"><img src="../Imagens/set.webp" width="100"></a>
 </body>
+
 </html>
