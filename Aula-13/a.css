@@ -1,0 +1,102 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+     justify-content: space-evenly;
+      background-color: aqua;
+    border-width: 10px;
+    border-style: ridge;
+    border-color: black;
+    padding: 20px;
+    outline-style: ridge;
+    outline-width: 30px;
+    outline-color: blue;
+    margin: 50px;
+    margin-bottom: 100px;
+    }
+
+.item1 {
+    flex-grow: 1;
+
+    background-color: aqua;
+    border-width: 10px;
+    border-style: dashed;
+    border-color: black;
+    padding: 20px;
+    outline-style: solid;
+    outline-width: 30px;
+    outline-color: blue;
+    margin: 50px;
+    margin-bottom: 100px;
+}
+
+.item2 {
+    flex-grow: 1; 
+    flex-grow: 1;
+
+    background-color: aqua;
+    border-width: 10px;
+    border-style: dashed;
+    border-color: black;
+    padding: 20px;
+    outline-style:solid;
+    outline-width: 30px;
+    outline-color: blue;
+    margin: 50px;margin-bottom: 100px;
+}
+
+.item3 {
+    flex-grow: 1; flex-grow: 1;
+
+    background-color: aqua;
+    border-width: 10px;
+    border-style: dashed;
+    border-color: black;
+    padding: 20px;
+    outline-style:solid;
+    outline-width: 30px;
+    outline-color: blue;
+    margin: 50px;margin-bottom: 100px;
+}
+
+.item1:hover {
+    flex-grow: 1;
+
+    background-color: rgb(217, 255, 0);
+    border-width: 10px;
+    border-style: dashed;
+    border-color: black;
+    padding: 20px;
+    outline-style: solid;
+    outline-width: 30px;
+    outline-color: rgb(255, 0, 0);
+    margin: 50px;margin-bottom: 100px;
+    transform: translateY(-20px);
+}
+
+div {
+    flex-grow: 1;
+   
+    background-color: aqua;
+    border-width: 10px;
+    border-style: dashed;
+    border-color: black;
+    padding: 20px;
+    outline-style: solid;
+    outline-width: 30px;
+    outline-color: blue;
+    margin: 50px;margin-bottom: 100px;
+}
+
+h1 {
+    flex-grow: 1;
+    background-color: aqua;
+    border-width: 10px;
+    border-style: none;
+    border-color: black;
+    padding: 20px;
+    outline-style: solid;
+    outline-width: 30px;
+    outline-color: blue;
+    margin: 50px;margin-bottom: 100px;
+}
